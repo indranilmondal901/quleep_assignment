@@ -11,7 +11,6 @@ const router = require("./route/route")
 //middlewire
 app.use(cors());
 app.use("/api/v1",router);
-app.use(cors(corsConfig));
 app.use(express.json());
 
 //listen
