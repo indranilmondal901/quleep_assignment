@@ -9,16 +9,10 @@ require("./db/connection")
 const router = require("./route/route")
 
 //middlewire
-// app.use(cors());
-const corsConfig = {
-    origin: `*`,
-    methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
-    credentials: true,
-    allowedHeaaders: ['Content-Type', 'Authorization', 'Set-Cookie']
-}
+app.use(cors());
+app.use("/api/v1",router);
 app.use(cors(corsConfig));
 app.use(express.json());
-app.use("/api/v1",router);
 
 //listen
 app.listen(PORT, () => {

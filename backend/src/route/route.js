@@ -14,7 +14,7 @@ const cloudinary = require('cloudinary').v2;
 const router = express.Router();
 
 //middlewire
-// router.use(cors())
+router.use(cors())
 
 // configure file upload
 router.use(fileUpload({
