@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config()
 
@@ -11,6 +12,9 @@ const cloudinary = require('cloudinary').v2;
 
 //router
 const router = express.Router();
+
+//middlewire
+router.use(cors())
 
 // configure file upload
 router.use(fileUpload({

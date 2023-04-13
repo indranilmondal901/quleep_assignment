@@ -5,7 +5,7 @@ import "../home/Home.css";
 const Home = () => {
     const [data, setData] = useState(null);
     useEffect(() => {
-        axios.get("http://localhost:8080/api/v1/products").then((res) => {
+        axios.get("https://quleep.onrender.com/api/v1/products").then((res) => {
             setData(res.data)
         }).catch((err) => {
             console.log(err);
