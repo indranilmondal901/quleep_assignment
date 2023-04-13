@@ -19,7 +19,7 @@ const Home = () => {
                 data ? (
                     data.map((sdata, i) => {
                         return (
-                            <div key={i} style={{backgroundColor:"#f8f8", padding:"0% 5%", margin:"1% 20%",border:"1px solid black"}}>
+                            <div key={i} style={{backgroundColor:"#f7f7f7", padding:"0% 5%", margin:"1% 20%",border:"1px solid black"}}>
                                 <h2 style={{color:'black',fontSize:"1.8rem"}}>{sdata.name}</h2>
                                 <details style={{color:'blue',fontSize:"1.1rem"}}>
                                     <p>
