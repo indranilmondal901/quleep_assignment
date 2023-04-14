@@ -47,6 +47,7 @@ router.post("/upload-images", async (req, res) => {
 router.post("/create-product", async (req, res) => {
     try {
         const { name, description, price, currency, images } = req.body;
+        console.log(description,price,currency,images)
         console.log(name, description, price, currency, images )
         const product = new Product({
             name,
