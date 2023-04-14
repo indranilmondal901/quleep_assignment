@@ -49,7 +49,7 @@ const UploadPage = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         // make API call to create new product
-        axios.post("https://quleep.onrender.com/api/v1/products", { name, description, price, currency, images })
+        axios.post("https://quleep.onrender.com/api/v1/create-product", { name, description, price, currency, images })
             .then((response) => {
                 console.log(response)
                 navigate("/")
