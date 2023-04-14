@@ -46,10 +46,9 @@ router.post("/upload-images", async (req, res) => {
 // endpoint for creating a new product with image URLs
 router.post("/create-product", async (req, res) => {
     try {
+        console.log(req.body)
         console.log(req.body.name)
         const { name, description, price, currency, images } = req.body;
-        console.log(description,price,currency,images)
-        console.log(name, description, price, currency, images )
         const product = new Product({
             name,
             description,
